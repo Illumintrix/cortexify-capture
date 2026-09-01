@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="styles.css"></head><body><main>
+<header><div class="brand"><span class="orb"></span><b>Cortexify</b></div><button id="open" class="icon" title="Open library">↗</button></header>
+<section id="connect" hidden><div class="hero"><span class="bigorb"></span><h1>Capture ideas<br>before they vanish.</h1><p>Connect once, then save from any tab.</p><button id="connectBtn" class="primary">Connect Cortexify</button></div></section>
+<section id="capture" hidden>
+<div class="eyebrow">CURRENT PAGE</div><div class="page"><img id="favicon"><div><b id="title"></b><small id="host"></small></div><span id="dup" hidden>Saved</span></div>
+<label>Collection<select id="collection"><option value="">Inbox · decide later</option></select></label>
+<button id="save" class="primary">Save page <kbd>⌥⇧S</kbd></button>
+<div class="split"><button id="selection">Save selection</button><button id="tabs">Save window tabs</button></div>
+<div id="batch" hidden><div class="batchhead"><b>Tab stack</b><small id="tabCount"></small></div><div id="tabList"></div><button id="saveTabs" class="primary">Save selected tabs</button></div>
+</section>
+<footer><span id="status">Ready</span><button id="disconnect">Disconnect</button></footer>
+</main><script src="api.js"></script><script src="popup.js"></script></body></html>
